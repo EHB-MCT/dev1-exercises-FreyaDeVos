@@ -3,10 +3,10 @@
 drawHouse();
 
 function drawHouse() {
-    let canvas = document.querySelector('canvas');
+    let canvas = document.querySelector("canvas");
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
-    let context = canvas.getContext('2d');
+    let context = canvas.getContext("2d");
 
 
     context.fillStyle = "#a52a2a";
