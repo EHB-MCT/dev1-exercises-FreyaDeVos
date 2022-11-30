@@ -14,7 +14,7 @@ function drawCircles() {
     let i = 1;
 
     while (i <= 4) {
-        fillCircle(i * 100, 100, 50);
+        fillCircle(i * 100, y * 100, 50);
         i++;
     }
 
