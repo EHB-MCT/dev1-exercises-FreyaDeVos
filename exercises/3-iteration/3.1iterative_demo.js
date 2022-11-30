@@ -1,4 +1,6 @@
 "use strict";
+/** @type {CanvasRenderingContext2D} */
+let context;
 
 drawCircles();
 
@@ -6,15 +8,21 @@ function drawCircles() {
     let canvas = document.querySelector("canvas");
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
-    let context = canvas.getContext('2d');
+    context = canvas.getContext('2d');
 
-    context.lineWidth = "4";
-    context.strokeStyle = "red";
+
+    let i = 1;
+
+    while (i <= 4) {
+        fillCircle(i * 100, 100, 50);
+        i++;
+    }
+
+}
+
+function fillCircle(x, y, r) {
     context.beginPath();
-    context.moveTo(50, 50);
-    context.lineTo(200, 200);
-    context.moveTo(200, 50);
-    context.lineTo(50, 200);
-    context.stroke();
+    context.arc(x, y, r, 0, Math.PI * 2);
+    context.fill();
 
 }
