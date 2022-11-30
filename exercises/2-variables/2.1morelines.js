@@ -4,7 +4,6 @@
 function drawLine();
 
 
-
 function drawSunSet() {
     let canvas = document.querySelector("canvas");
     canvas.width = window.innerWidth;
