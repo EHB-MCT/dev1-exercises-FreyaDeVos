@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../scripts"
+		},
+		{
+			"path": "../3-iteration.js"
+		},
+		{
+			"path": "../2-variables"
+		}
+	]
+}
