@@ -20,8 +20,11 @@ function draw() {
 function drawLines() {
 
     let i = 0
-    while (i <= 10);
-    Utils.drawLine(75, 75 + i * 25, 325, 75 + i * 25);
-    i++;
+    while (i <= 10); {
+        Utils.drawLine(75, 75 + i * 25, 325, 75 + i * 25);
+        i++;
+    }
+
+
 
 }
