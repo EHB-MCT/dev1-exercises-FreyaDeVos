@@ -126,3 +126,61 @@ function drawDiagonalSquares() {
         i = i + 1;
     }
 } */
+
+//3.1.g circles
+/* draw();
+function draw() {
+    context.lineWidth = 2;
+    context.strokeStyle = "white";
+    context.fillStyle = "#3498DB";
+    context.fillRect(50, 50, 300, 300);
+    drawCircles();
+}
+function drawCircles() {
+    let i = 0;
+    while (i < 7) {
+        Utils.strokeCircle(200, 200, i * 20);
+        i = i + 1
+    }
+} */
+
+//3.1.h oneindig circles
+/* draw();
+function draw() {
+    context.lineWidth = 2;
+    context.strokeStyle = "white";
+    context.fillStyle = "#3498DB";
+    context.fillRect(50, 50, 300, 300);
+    drawCircles();
+}
+function drawCircles() {
+    let i = 10;
+    while (i > 0) {
+        Utils.strokeCircle(200, 200, i * 20);
+        i = i - 1
+    }
+} */
+
+//3.1.i hoeken circles 
+/* draw();
+
+function draw() {
+    context.lineWidth = 2;
+    context.strokeStyle = "white";
+    context.fillStyle = "#3498DB";
+    context.fillRect(50, 50, 300, 300);
+    drawCircles();
+}
+
+function drawCircles() {
+    let i = 0;
+    while (i < 10) {
+        let size = i * 15;
+        Utils.strokeCircle(200, 200, size);
+        Utils.strokeCircle(50, 50, size);
+        Utils.strokeCircle(350, 50, size);
+        Utils.strokeCircle(50, 350, size);
+        Utils.strokeCircle(350, 350, size);
+        i = i + 1
+    }
+} */
