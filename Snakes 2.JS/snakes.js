@@ -69,7 +69,7 @@ function drawCross() {
 
 //3.1.D diagonalen 
 
-draw();
+/* draw();
 
 function draw() {
     context.lineWidth = 2;
@@ -85,4 +85,49 @@ function drawDiagonals() {
         Utils.drawLine(75 + i * 20, 190 + i * 25, 200 + i * 20, 75 + i * 20);
         i = i + 1;
     }
+} */
+
+//3.1E diagonaal grid 
+/* draw();
+
+function draw() {
+    context.lineWidth = 2;
+    context.strokeStyle = "white";
+    context.fillStyle = "#3498DB";
+    context.fillRect(50, 50, 300, 300);
+    drawGrid();
+}
+
+function drawGrid() {
+    let i = 0;
+    while (i <= 5) {
+        let x = 75 + i * 50;
+        let y = x;
+
+        Utils.drawLine(75 + i * 25, 200 + i * 25, 200 + i * 25, 75 + i * 25);
+        Utils.drawLine(75 + i * 25, 200 - i * 25, 200 + i * 25, 325 - i * 25);
+        i = i + 1;
+    }
+} */
+
+//3.1.f vierkanten diagonaal 
+
+draw();
+
+function draw() {
+    context.lineWidth = 2;
+    context.strokeStyle = "white";
+    context.fillStyle = "#3498DB";
+    context.fillRect(50, 50, 300, 300);
+    drawSquare();
+}
+
+function drawSquare() {
+    let i = 0;
+    while (i < 8); {
+        context.strokeRect(75 + i * 20, 75 + i * 20, 100, 100);
+        i = i + 1;
+    }
+
+
 }
