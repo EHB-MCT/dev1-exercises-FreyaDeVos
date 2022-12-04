@@ -111,23 +111,18 @@ function drawGrid() {
 } */
 
 //3.1.f vierkanten diagonaal 
-
-draw();
-
+/* draw();
 function draw() {
     context.lineWidth = 2;
     context.strokeStyle = "white";
     context.fillStyle = "#3498DB";
     context.fillRect(50, 50, 300, 300);
-    drawSquare();
+    drawDiagonalSquares();
 }
-
-function drawSquare() {
+function drawDiagonalSquares() {
     let i = 0;
-    while (i < 8); {
+    while (i <= 6) {
         context.strokeRect(75 + i * 20, 75 + i * 20, 100, 100);
         i = i + 1;
     }
-
-
-}
+} */
