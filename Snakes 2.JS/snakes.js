@@ -1,7 +1,7 @@
 "use strict";
 import context from "../../scripts/context.js";
 import * as Utils from "../../scripts/utils.js";
-
+import * as Noise from "../Snakes 2.JS/scripts/noise.js"
 
 /* //3.1.A horizonatle lijnen 
 
@@ -184,3 +184,14 @@ function drawCircles() {
         i = i + 1
     }
 } */
+
+drawSquares();
+
+
+function drawSquares() {
+    for (let i = 0; i < 100; i++) {
+        let y = Noise.perlinNoise(i) * 500;
+        context.fillRect(i, y, 2, 2);
+    }
+
+}
