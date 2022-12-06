@@ -189,9 +189,9 @@ drawSquares();
 
 
 function drawSquares() {
-    for (let i = 0; i < 100; i++) {
-        let y = Noise.perlinNoise(i) * 500;
-        context.fillRect(i, y, 2, 2);
+    for (let i = 0; i < 500; i++) {
+        let y = Noise.perlinNoise(i / 100) * 500;
+        context.fillRect(i, y, 40, 40);
     }
 
 }
