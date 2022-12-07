@@ -162,7 +162,7 @@ function drawCircles() {
 } */
 
 //3.1.i hoeken circles 
-/* draw();
+draw();
 
 function draw() {
     context.lineWidth = 2;
@@ -183,15 +183,29 @@ function drawCircles() {
         Utils.strokeCircle(350, 350, size);
         i = i + 1
     }
-} */
-
-drawSquares();
-
-
-function drawSquares() {
-    for (let i = 0; i < 500; i++) {
-        let y = Noise.perlinNoise(i / 100) * 500;
-        context.fillRect(i, y, 40, 40);
-    }
-
 }
+
+
+//3.1.j horzi circles
+/* 
+draw();
+
+function draw() {
+    context.lineWidth = 2;
+    context.strokeStyle = "white";
+    context.fillStyle = "#3498DB";
+    context.fillRect(50, 50, 300, 300);
+    drawHCircles();
+}
+
+function drawHCircles() {
+    i = 0;
+    while (i < 10) {
+        let size = i * 15;
+        Utils.strokeCircle(200, 200, size);
+        Utils.strokeCircle(70, 50, size);
+        Utils.strokeCircle(3, 50, size);
+
+
+    }
+} */
