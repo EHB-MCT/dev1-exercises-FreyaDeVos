@@ -1,7 +1,8 @@
 "use strict";
 
 import * as Utils from "../scripts/utils.js";
-import context from "../scripts/context.js";
+
+
 
 
 drawCircles();
