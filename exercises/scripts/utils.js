@@ -18,3 +18,19 @@ export function fillCircle(x, y, r) {
 
 }
 
+/**
+ * 
+ * @param {number} x1 x-coordinate of the startingpoint
+ * @param {number} y1 y-coordinate of the startingpoint 
+ * @param {number} x2 x-coordinate of endingpoint of line 
+ * @param {number} y2 y-coordinate of endingpoint of the line
+ */
+
+export function drawLine(x1, y1, x2, y2) {
+
+    context.beginPath();
+    context.moveTo(x1, y1);
+    context.lineTo(x2, y2);
+    context.stroke();
+
+}
