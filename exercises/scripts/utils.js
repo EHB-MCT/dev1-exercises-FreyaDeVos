@@ -48,6 +48,22 @@ export function strokeCircle(x, y, radius) {
     context.stroke();
 }
 
+
+/**
+ * 
+ * @param {number} x x-coordinate of the circle 
+ * @param {number} y y-coordinate of the circle 
+ * @param {number} radius the radius of the circle 
+ */
+
+export function fillAndStrokeCircle(x, y, radius) {
+    context.beginPath();
+    context.arc(x, y, radius, 0, Math.PI * 2);
+    context.fill();
+    context.stroke();
+
+}
+
 /**
  * 
  * @param {number} r rood
