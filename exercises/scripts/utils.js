@@ -47,3 +47,14 @@ export function strokeCircle(x, y, radius) {
     context.arc(x, y, radius, 0, Math.PI * 2);
     context.stroke();
 }
+
+/**
+ * 
+ * @param {number} r rood
+ * @param {number} g geel
+ * @param {number} b blue
+ * @returns 
+ */
+export function rgb(r, g, b) {
+    return "rgb(" + r + "," + g + "," + b + ")";
+}

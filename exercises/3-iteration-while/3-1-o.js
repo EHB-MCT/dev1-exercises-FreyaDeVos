@@ -1,6 +1,6 @@
 "use strict";
-import context from "../../scripts/context.js";
-import * as Utils from "../../scripts/utils.js";
+import context from "../scripts/context.js";
+import * as Utils from "../scripts/utils.js";
 
 draw();
 
@@ -14,10 +14,10 @@ function draw() {
 
 function drawGradient() {
     let i = 0;
-    while (i <= ) {
-        let gray = ;
+    while (i <= 300) {
+        let gray = i / 300 * 255;
         context.strokeStyle = Utils.rgb(gray, gray, gray);
-        Utils.drawLine(, , , );
+        Utils.drawLine(50 + i, 50, 50 + i, 350);
         i++;
     }
 }
