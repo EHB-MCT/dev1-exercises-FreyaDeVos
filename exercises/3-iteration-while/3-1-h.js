@@ -1,6 +1,6 @@
 "use strict";
-import context from "../../scripts/context.js";
-import * as Utils from "../../scripts/utils.js";
+import context from "../scripts/context.js";
+import * as Utils from "../scripts/utils.js";
 
 draw();
 
@@ -16,7 +16,7 @@ function drawMoreConcentricCircles() {
     context.lineWidth = 2;
     let i = 10;
     while (i > 0) {
-        Utils.strokeCircle(200, 200, );
-        i = ;
+        Utils.strokeCircle(200, 200, 50 + i * 20);
+        i = i - 1;
     }
 }

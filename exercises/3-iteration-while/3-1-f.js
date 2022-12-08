@@ -1,5 +1,5 @@
 "use strict";
-import context from "../../scripts/context.js";
+import context from "../scripts/context.js";
 
 draw();
 
@@ -12,9 +12,9 @@ function draw() {
 }
 
 function drawDiagonalSquares() {
-    let i = ;
-    while () {
-        context.strokeRect(,,,);
-        i = ;
+    let i = 0;
+    while (i < 7) {
+        context.strokeRect(80 + i * 25, 60 + i * 25, 100, 100);
+        i += 1;
     }
 }

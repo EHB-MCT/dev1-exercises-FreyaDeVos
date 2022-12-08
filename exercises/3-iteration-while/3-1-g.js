@@ -1,6 +1,6 @@
 "use strict";
-import context from "../../scripts/context.js";
-import * as Utils from "../../scripts/utils.js";
+import context from "../scripts/context.js";
+import * as Utils from "../scripts/utils.js";
 
 draw();
 
@@ -13,13 +13,13 @@ function draw() {
 }
 
 function drawConcentricCircles() {
-    let i = ;
-    while () {
+    let i = 0;
+    while (i <= 3) {
         //This strokeCircle function does not exist yet!
         //Add it to the utils script:
         //The function draws the stroke of a circle 
         //and has the following parameters: x,y,radius
-        Utils.strokeCircle(, , );
-        i = ;
+        Utils.strokeCircle(200, 200, 10 + i * 30);
+        i = i + 1;
     }
 }

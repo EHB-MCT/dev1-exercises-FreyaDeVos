@@ -34,3 +34,16 @@ export function drawLine(x1, y1, x2, y2) {
     context.stroke();
 
 }
+
+/**
+ * 
+ * @param {number} x x-coordinate of the circle
+ * @param {number} y y-coordinate of the cicle 
+ * @param {number} radius radius of the circle 
+ */
+
+export function strokeCircle(x, y, radius) {
+    context.beginPath();
+    context.arc(x, y, radius, 0, Math.PI * 2);
+    context.stroke();
+}
