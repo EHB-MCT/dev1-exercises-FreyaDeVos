@@ -1,6 +1,6 @@
 "use strict";
-import context from "../../scripts/context.js";
-import * as Utils from "../../scripts/utils.js";
+import context from "../scripts/context.js";
+import * as Utils from "../scripts/utils.js";
 
 draw();
 
@@ -14,8 +14,8 @@ function draw() {
 
 function drawHourGlass() {
     let i = 0;
-    while () {
-        Utils.drawLine(, , , );
+    while (i < 25) {
+        Utils.drawLine(50 + i * 15, 50, 350 - i * 15, 350);
         i++;
     }
 }

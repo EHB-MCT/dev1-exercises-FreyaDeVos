@@ -1,6 +1,6 @@
 "use strict";
-import context from "../../scripts/context.js";
-import * as Utils from "../../scripts/utils.js";
+import context from "../scripts/context.js";
+import * as Utils from "../scripts/utils.js";
 
 draw();
 
@@ -14,9 +14,9 @@ function draw() {
 
 function drawWormhole() {
     let i = 0;
-    while () {
-        Utils.drawLine(, , , );
-        Utils.drawLine(, , , );
-        i = i++;
+    while (i <= 30) {
+        Utils.drawLine(50 + i * 10, 50, 350 - i * 10, 350);
+        Utils.drawLine(50, 50 + i * 10, 350, 350 - i * 10);
+        i++;
     }
 }
