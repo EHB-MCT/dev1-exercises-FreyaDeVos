@@ -74,3 +74,7 @@ export function fillAndStrokeCircle(x, y, radius) {
 export function rgb(r, g, b) {
     return "rgb(" + r + "," + g + "," + b + ")";
 }
+
+export function hsl(h, s, l) {
+    return "hsl(" + h + "," + s + "%," + l + "%)";
+}
