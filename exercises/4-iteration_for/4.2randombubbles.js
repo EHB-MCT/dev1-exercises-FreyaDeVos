@@ -21,12 +21,13 @@ function draw() {
 
 
 function drawBubbles() {
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 50; i++) {
         for (let j = 0; j < 10; j++) {
-            let x = i * 200;
-            let y = j * 200;
-            context.fillStyle = "blue";
-            Utils.fillCircle(x, y, Math.random() * 100);
+            let x = Utils.randomNumber(200, width - 200);
+            let y = Utils.randomNumber(200, height - 200);
+            let size = Utils.randomNumber(10, 50);
+            context.fillStyle = Utils.hsla(Utils.randomNumber(0, 180), 75, 50, 30);
+            Utils.fillCircle(x, y, size);
         }
     }
 }
