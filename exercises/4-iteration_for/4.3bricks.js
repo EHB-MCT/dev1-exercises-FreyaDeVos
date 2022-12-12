@@ -7,23 +7,19 @@ import * as Utils from "../scripts/utils.js";
 
 drawBricks()
 
+
 function drawBricks() {
-    let row = 8;
-    let column = 8;
-    let width = 100;
-    let height = 50;
+    let row = 6;
+    let column = 6;
     let space = 50;
-    context.fillstyle = "red";
+    let w = 100;
+    let h = 50;
+    context.fillStyle = "darkred";
     for (let i = 0; i < column; i++) {
         for (let j = 0; j < row; j++) {
-
-            let y = space + j * (height + 5);
-            context.fillRect(x, y, width, height);
-
+            let x = space + i * (w + 5) + j % 2 * 50;
+            let y = space + j * (h + 5);
+            context.fillRect(x, y, w, h);
         }
-
     }
-
-
-
 }
