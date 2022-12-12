@@ -1,7 +1,5 @@
 "use strict";
 
-import context from "./context.js";
-
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 // Downloaded from p5.js github: https://github.com/processing/p5.js/blob/master/src/math/noise.js //
 // Referenced from http://mrl.nyu.edu/~perlin/noise/                                               //

@@ -79,11 +79,9 @@ export function hsl(h, s, l) {
     return "hsl(" + h + "," + s + "%," + l + "%)";
 }
 
-/**
- * 
- */
-export function randomNumber(){
 
+export function randomNumber(min, max) {
+    return Math.random() * max;
 
 
 
