@@ -162,3 +162,17 @@ export function drawLine(x1, y1, x2, y2) {
     context.lineTo(x2, y2);
     context.stroke();
 }
+
+/**
+ * 
+ * @param {*} x1 x-coordinate start van de zijde
+ * @param {*} y1 y-coordinate start van de zijde
+ * @param {*} x2 x-coordinate eind van de zijde
+ * @param {*} y2 y-coordinate einde van de zijde
+ * @returns 
+ */
+
+//berekent lentevan schuine zijde
+export function calculateDisctance(x1, y1, x2, y2) {
+    return Math.hypot(x2 - x1, y2 - y1);
+}
