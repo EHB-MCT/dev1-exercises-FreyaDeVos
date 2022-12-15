@@ -1,22 +1,26 @@
 "use strict";
-import context from "../../scripts/context.js";
-import * as Utils from "../../scripts/utils.js";
+import context from "../scripts/context.js";
+import * as Utils from "../scripts/utils.js";
 
 let width = context.canvas.width;
 let height = context.canvas.height;
 
+reset();
+document.getElementById("draw").onclick = drawCards;
 
-drawSolitaire()
+function drawCards() {
+    reset();
 
-function drawSolitaire() {
-    context.fillStyle = "green";
-    context.fillRect(0, 0, width, height);
-    context.fill();
 
 }
 
+function reset() {
+    context.fillStyle = "seagreen";
+    context.fillRect(0, 0, width, height);
+}
 
-/* function drawHeart(x, y) {
+
+function drawHeart(x, y) {
     context.beginPath();
     context.moveTo(x, y - 10);
     context.bezierCurveTo(x, y - 25, x + 40, y - 15, x, y + 20);
@@ -58,4 +62,4 @@ function drawDiamond(x, y) {
     context.lineTo(x + 20, y);
     context.lineTo(x, y + 20);
     context.fill();
-} */
+}
