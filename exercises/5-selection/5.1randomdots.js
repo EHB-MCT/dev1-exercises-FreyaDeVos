@@ -7,7 +7,7 @@ let width = context.canvas.width;
 let height = context.canvas.height;
 
 //5.1 a helft helft 
-/* drawRandomCircles();
+drawRandomCircles();
 
 function drawRandomCircles() {
 
@@ -30,7 +30,7 @@ function drawRandomCircles() {
         }
         Utils.fillCircle(x, y, 2);
     }
-} */
+}
 
 
 //5.1 B dutch flag 
@@ -115,7 +115,7 @@ function drawRandomDots() {
 } */
 
 //5.1. D circle 
-drawRandomDots();
+/* drawRandomDots();
 
 function drawRandomDots() {
     context.fillRect(0, 0, width, height);
@@ -132,4 +132,4 @@ function drawRandomDots() {
         Utils.fillCircle(x, y, 2);
 
     }
-}
+} */

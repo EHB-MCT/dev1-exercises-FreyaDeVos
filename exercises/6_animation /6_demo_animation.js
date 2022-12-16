@@ -43,14 +43,20 @@ let frameCount = 0; // best globale variabele
 let xPos = width / 2;
 let yPos = height / 2;
 
+context.fillRect(0, 0, width, height);
+
 update();
 
 function update(currentTime) {
     frameCount++;
-    context.fillStyle = "white";
-    context.fillRect(0, 0, width, height);
     context.fillStyle = "black";
+
+    context.fillStyle = Utils.hsl(frameCount, 100, 50);
     Utils.fillCircle(xPos, yPos, 25);
+
+    xPos += Utils.randomNumber(-10, 10);
+    yPos += Utils.randomNumber(-5, 5);
+
     requestAnimationFrame(update);
 
 }

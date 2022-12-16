@@ -12,7 +12,9 @@ If the number is 1 ten draw a diagonal line the other way: \
 The spacing between the diagonal lines is 10 pixels, the linewidth is 5;
 function drawMaze() { */
 
-/* drawMaze();
+drawMaze();
+
+//drawColorMaze();
 
 function drawMaze() {
     context.fillStyle = "darkgray";
@@ -22,7 +24,9 @@ function drawMaze() {
     let space = 10;
     for (let i = 0; i < width / space; i++) {
         for (let j = 0; j < height / space; j++) {
-            let r = Math.floor(Math.random() * 2);
+            //let r = Math.floor(Math.random() * 2);
+            let r = Math.round(Math.random());
+            console.log(r);
             if (r == 0) {
                 Utils.drawLine(i * space, j * space, (i + 1) * space, (j + 1) * space);
             } else {
@@ -30,8 +34,10 @@ function drawMaze() {
             }
         }
     }
-} */
-drawColorMaze();
+}
+
+
+
 
 function drawColorMaze() {
     context.fillStyle = "black";
