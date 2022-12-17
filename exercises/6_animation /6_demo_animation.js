@@ -7,6 +7,25 @@ import * as Utils from "../scripts/utils.js";
 let width = context.canvas.width;
 let height = context.canvas.height;
 
+let frameCount = 0;
+let xPos = width / 2;
+let yPos = height / 2;
+context.fillRect(0, 0, width, height);
+update();
+
+function update(currentTime) {
+    frameCount++;
+
+    context.fillStyle = Utils.hsl(frameCount, 100, 50);
+    Utils.fillCircle(xPos, yPos, 25);
+
+    xPos += Utils.randomNumber(-9, 5);
+    yPos += Utils.randomNumber(-5, 5);
+
+    requestAnimationFrame(update);
+}
+
+
 
 //bewegende bolledtje van links nar rechtsv a scherm - als het rechts van scherm is begint het trg van links 
 /* let frameCount = 0; // best globale variabele 
@@ -39,13 +58,13 @@ function update(currentTime) {
 //bewegend bolletje van midden van scherm 
 
 
-let frameCount = 0; // best globale variabele 
+/* let frameCount = 0; // best globale variabele 
 let xPos = width / 2;
 let yPos = height / 2;
 
 context.fillRect(0, 0, width, height);
 
-update();
+//update();
 
 function update(currentTime) {
     frameCount++;
@@ -59,4 +78,4 @@ function update(currentTime) {
 
     requestAnimationFrame(update);
 
-}
+} */

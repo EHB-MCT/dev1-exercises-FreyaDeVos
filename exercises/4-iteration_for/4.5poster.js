@@ -24,7 +24,7 @@ for (let i = 0; i < 250; i++) {
     let y = Utils.randomNumber(centerY - 400, centerY + 350);
     let yOff = Utils.randomNumber(1, 50);
     let y2 = Utils.randomNumber(centerY - 400, centerY + 350);
-    let yOff2 = Utils.randomNumber(1, 50);
+    let yOff2 = Utils.randomNumber(1, 60);
     context.fillStyle = color;
     fillQuad(centerX - 400, y, centerX - 400, y + yOff, centerX + 400, y2, centerX + 400, y2 + yOff2);
     context.font = "normal " + Utils.randomNumber(8, 76) + "pt Arial";
@@ -40,7 +40,7 @@ context.fillText("is da shit", centerX, centerY + 150);
 context.fillStyle = "black";
 context.font = "bold 120pt Arial";
 context.fillText("MCT", centerX, centerY + 60);
-fillTriangle(centerX - 401, centerY - 401, centerX, centerY - 401, centerX - 401, centerY);
+fillTriangle(centerX - 401, centerY - 300, centerX, centerY - 401, centerX - 401, centerY);
 fillTriangle(centerX + 401, centerY - 401, centerX, centerY - 401, centerX + 401, centerY);
 fillTriangle(centerX - 401, centerY + 401, centerX, centerY + 401, centerX - 401, centerY);
 fillTriangle(centerX + 401, centerY + 401, centerX, centerY + 401, centerX + 401, centerY);
