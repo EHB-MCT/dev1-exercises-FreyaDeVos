@@ -3,7 +3,6 @@
 import context from "../scripts/context.js";
 import * as Utils from "../scripts/utils.js";
 
-
 let width = context.canvas.width;
 let height = context.canvas.height;
 
@@ -50,7 +49,7 @@ main();
 
 function main() {
     if (isPlaying) {
-        drawStreet();
+        drawRoad();
         moveCars();
         drawTurtle();
         drawCar(xCar1, 225);
@@ -75,7 +74,7 @@ function showYouLose() {
 }
 
 function moveCars() {
-    console.log(speedCar1);
+    //console.log(speedCar1);
     if (xCar1 > width - 200) {
         speedCar1 *= -1;
         speedCar2 *= -1;
@@ -95,7 +94,7 @@ function drawCar(x, y) {
     context.fillRect(x + 130, y + 10, 60, 80);
 }
 
-function drawStreet() {
+function drawRoad() {
     context.fillStyle = "lightgreen";
     context.fillRect(0, 0, width, height);
     for (let i = 0; i < 3; i++) {
