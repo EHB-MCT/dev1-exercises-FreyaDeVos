@@ -8,15 +8,29 @@ let height = context.canvas.height;
 
 let spacing = 10;
 
-drawMaze();
+//drawMaze();
 
 function drawMaze() {
     context.lineWidth = 5;
-    Utils.drawLine(0, 0, spacing, spacing)
+    context.lineCap = 'square';
 
+    context.fillRect(0, 0, width, height);
     let horizontalAmount = width / spacing;
-    for (let i = 0; i < horizontalAmount; i++) {
-        Utils.drawLine(i * spacing, 0, spacing, spacing);
-    }
+    let verticalAmount = height / spacing;
+    for (let j = 0; j < verticalAmount; j++) {
+        for (let i = 0; i < horizontalAmount; i++) {
+            let randomColor = Math.floor(Math.random() * 360);
+            context.strokeStyle = Utils.hsl(randomColor, 50, 50);
+            let random = Math.random();
+            console.log(random);
+            if (random > 0.5) {
+                Utils.drawLine(i * spacing, j * spacing, spacing + i * spacing, spacing + j * spacing);
+            } else {
+                Utils.drawLine(spacing + i * spacing, j * spacing, i * spacing, spacing + j * spacing);
 
+            }
+        }
+    }
 }
+
+
